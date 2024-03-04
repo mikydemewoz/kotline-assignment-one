@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/water_resource_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text"
+            android:hint="Water resource name"
+            android:layout_marginBottom="@dimen/optimal_margin"/>
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text"
+            android:hint="Location"
+            android:layout_marginBottom="@dimen/optimal_margin"/>
+
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text"
+            android:hint="Type"
+            android:layout_marginBottom="@dimen/optimal_margin"/>
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:text="Add"
+            android:layout_marginBottom="@dimen/optimal_margin"/>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_shape">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_shape">
+
+                <!-- Column 1 -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Water Resource Name"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/column_divider"/>
+
+                <!-- Column 2 -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Location"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/column_divider"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Type"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/column_divider"/>
+
+                <!-- Add more columns as needed -->
+
+            </TableRow>
+
+            <!-- Add more rows as needed -->
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
